@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aic2026"
+version = "0.1.0"
+description = "Interactive video retrieval system for HCMC AI Challenge 2026 (preliminary round)"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.26",
+    "pandas>=2.2",
+    "pyarrow>=15.0",
+    "pyyaml>=6.0",
+    "python-dotenv>=1.0",
+    "faiss-cpu>=1.8",
+    "pillow>=10.2",
+    "tqdm>=4.66",
+    "requests>=2.31",
+    "streamlit>=1.35",
+]
+
+[project.optional-dependencies]
+# Query understanding / VQA via Gemini. Kept optional so the core runs offline.
+llm = ["google-genai>=0.3"]
+# CPU inference for SigLIP text tower (query encoding) without torch+CUDA.
+onnx = ["onnxruntime>=1.17", "transformers>=4.40", "tokenizers>=0.19"]
+dev = ["pytest>=8.0", "ruff>=0.4"]
+
+[project.scripts]
+aic = "aic.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+# Deliberate choices, recorded here so genuine findings stand out:
+ignore = [
+    # Unreadable keyframes are skipped on purpose - logging every one would bury
+    # the progress output on a corpus this size, and the zero row is the signal.
+    "S112",
+]
+
+[tool.ruff.lint.per-file-ignores]
+# Notebooks are generated from _make_notebooks.py; Colab cells intentionally use
+# bare shell calls and per-cell import blocks.
+"notebooks/*.ipynb" = ["I001", "PLW1510", "E402"]
+# The Streamlit entry point must extend sys.path before importing the package.
+"app/streamlit_app.py" = ["E402"]

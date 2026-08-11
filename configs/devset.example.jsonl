@@ -1,0 +1,12 @@
+// Self-labelled dev set. Copy to configs/devset.jsonl and replace with real
+// moments found through the Streamlit UI. The organizers publish no ground truth,
+// so this file is the only way to measure whether a change actually helped.
+//
+// Aim for ~30 entries across the three task types. Write the queries in the same
+// register the organizers use: terse, third person, one concrete visual detail.
+// Lines starting with // are ignored.
+{"id": "kis-01", "task": "kis", "query": "Tìm cảnh một người đang mở laptop trong phòng làm việc", "video_id": "L01_V001", "start": 500, "end": 510}
+{"id": "kis-02", "task": "kis", "query": "Một diễn giả mặc áo đỏ phát biểu tại cuộc họp báo ngoài trời, phía sau có nhiều cây xanh", "video_id": "L02_V003", "start": 1490, "end": 1520}
+{"id": "vqa-01", "task": "vqa", "query": "Cảnh bữa tiệc, người phụ nữ mặc váy đỏ đang cầm ly", "question": "Người phụ nữ mặc váy đỏ đang cầm ly màu gì?", "video_id": "L05_V005", "start": 800, "end": 900, "answers": ["màu xanh", "xanh", "blue"]}
+{"id": "vqa-02", "task": "vqa", "query": "Lễ trao giải thưởng âm nhạc, nhiều người lên sân khấu nhận giải", "question": "Có bao nhiêu người lên sân khấu để nhận giải thưởng lớn nhất?", "video_id": "L07_V002", "start": 3440, "end": 3470, "answers": ["5", "Năm", "năm", "five"]}
+{"id": "trake-01", "task": "trake", "query": "Vận động viên thực hiện cú nhảy cao", "events": ["chạy đà, bàn chân đầu tiên bước qua vạch xuất phát", "giậm nhảy, chân rời hoàn toàn khỏi mặt đất", "bay qua xà, hông ở vị trí cao nhất", "tiếp đất, lưng bắt đầu chạm đệm"], "video_id": "L10_V010", "windows": [[95, 105], [145, 155], [195, 205], [245, 255]]}

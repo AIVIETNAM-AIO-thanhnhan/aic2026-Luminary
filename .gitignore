@@ -1,0 +1,28 @@
+# Data lives on D: and is never committed
+data/
+*.npy
+*.parquet
+*.faiss
+*.sqlite
+*.sqlite3
+
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+
+# Submissions (regenerated per run)
+submissions/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

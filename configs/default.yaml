@@ -1,0 +1,81 @@
+# AIC 2026 configuration.
+# Paths may be absolute or relative to the repo root.
+
+paths:
+  data_root: data
+  raw:
+    videos: data/raw/videos
+    keyframes: data/raw/keyframes
+    objects: data/raw/objects
+    clip_features: data/raw/clip-features
+    metadata: data/raw/metadata
+  derived:
+    root: data/derived
+    catalog: data/derived/catalog.parquet
+    embeddings: data/derived/embeddings
+    asr: data/derived/asr/asr.parquet
+    ocr: data/derived/ocr/ocr.parquet
+    index: data/derived/index
+    text_db: data/derived/index/text.sqlite
+  submissions: submissions
+
+# Which embedding space the local FAISS index is built from.
+# `btc_clip`  -> the ViT-B/32 .npy files shipped by the organizers (M1 baseline)
+# `siglip`    -> embeddings.npy produced by notebooks/01_siglip.ipynb (M2)
+embedding:
+  active: btc_clip
+  spaces:
+    btc_clip:
+      dim: 512
+      model_id: openai/clip-vit-base-patch32
+      source: data/raw/clip-features
+    siglip:
+      dim: 1152
+      model_id: google/siglip2-so400m-patch14-384
+      source: data/derived/embeddings/siglip
+
+# Reciprocal Rank Fusion. score = sum over branches of weight / (k + rank).
+# k=60 is the value from the original RRF paper; it damps the tail so a single
+# branch cannot dominate on rank alone.
+fusion:
+  rrf_k: 60
+  weights:
+    visual: 1.0
+    ocr: 1.0
+    asr: 0.8
+    object: 0.3
+  candidates_per_branch: 500
+
+# Per-query answer list construction. See src/aic/submit/policy.py.
+submission:
+  max_answers: 100
+  # Ranks 1..diversify_head must come from distinct videos: a wrong video scores
+  # 0, so spreading the head is the cheapest hedge available.
+  diversify_head: 5
+  # For KIS/VQA: how many frames to emit per selected shot, and how far apart.
+  frames_per_shot: 3
+  frame_spread: 8
+  # For TRAKE: jitter offsets (in frames) applied to each event index on the
+  # lower-ranked duplicate rows, exploiting per-event partial credit.
+  trake_jitter: [0, -4, 4, -8, 8, -12, 12]
+
+# TRAKE stage 2: dense re-extraction window around each coarse event hit.
+trake:
+  window_seconds: 2.0
+  max_candidate_videos: 5
+  # Extract every Nth frame in the window (1 = native fps, the most precise).
+  frame_step: 1
+
+query:
+  # Competition queries are Vietnamese; CLIP/SigLIP text towers are English-centric.
+  translate_to_english: true
+  llm_model: gemini-2.0-flash
+  num_expansions: 3
+
+verify:
+  # Frame-alignment check (src/aic/data/verify.py).
+  sample_size: 20
+  # Mean absolute pixel error below which an extracted frame is considered a
+  # match for the stored keyframe. JPEG recompression alone stays well under 8.
+  mae_threshold: 8.0
+  offsets_to_try: [0, -1, 1, -2, 2]

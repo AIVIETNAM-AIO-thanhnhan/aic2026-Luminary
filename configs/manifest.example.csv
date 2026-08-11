@@ -1,0 +1,14 @@
+kind,name,url,sha256
+# Export the download rows from the organizers' Google Spreadsheet into this shape,
+# save as configs/manifest.csv, then run:  aic fetch configs/manifest.csv
+#
+# kind   : one of videos | keyframes | objects | clip_features | metadata
+#          (selects the destination under data/raw/)
+# name   : the archive filename; .zip files are extracted and then deleted
+# url    : direct link, or a Google Drive share link (rewritten automatically)
+# sha256 : optional; verified after download when present
+videos,Videos_L01.zip,https://drive.google.com/file/d/EXAMPLE_ID/view?usp=sharing,
+keyframes,Keyframes_L01.zip,https://drive.google.com/file/d/EXAMPLE_ID/view?usp=sharing,
+objects,Objects_L01.zip,https://drive.google.com/file/d/EXAMPLE_ID/view?usp=sharing,
+clip_features,CLIPFeatures_L01.zip,https://drive.google.com/file/d/EXAMPLE_ID/view?usp=sharing,
+metadata,Metadata_L01.zip,https://drive.google.com/file/d/EXAMPLE_ID/view?usp=sharing,
