@@ -133,6 +133,74 @@ def _cmd_search(args: argparse.Namespace) -> int:
     return 0
 
 
+def _cmd_package(args: argparse.Namespace) -> int:
+    """Zip the CSVs in a folder into the submission/ layout the graders require."""
+    from aic.submit.package import SUBMISSION_DIRNAME, build_package, inspect_csv
+    from aic.submit.writer import SubmissionError
+
+    config = load_config(args.config)
+    source = Path(args.source) if args.source else config.submissions_dir
+    csv_files = sorted(p for p in Path(source).rglob("*.csv"))
+    if not csv_files:
+        print(f"error: no .csv files under {source}", file=sys.stderr)
+        return 1
+
+    from aic.submit.package import parse_query_filename
+
+    answers: dict[str, tuple[str, list]] = {}
+    problems: list[str] = []
+    for csv_file in csv_files:
+        try:
+            query_id, task = parse_query_filename(csv_file.name)
+        except SubmissionError as exc:
+            problems.append(f"{csv_file.name}: {exc}")
+            continue
+
+        found = inspect_csv(csv_file, task)
+        if found:
+            problems.extend(f"{csv_file.name}: {p}" for p in found)
+            continue
+
+        import csv as csv_mod
+
+        with open(csv_file, encoding="utf-8", newline="") as handle:
+            cells = [row for row in csv_mod.reader(handle) if row]
+        if task == "trake":
+            rows = [(r[0].strip(), tuple(int(c) for c in r[1:])) for r in cells]
+        elif task == "vqa":
+            rows = [(r[0].strip(), int(r[1]), r[2] if len(r) > 2 else "") for r in cells]
+        else:
+            rows = [(r[0].strip(), int(r[1])) for r in cells]
+        answers[query_id] = (task, rows)
+
+    if problems:
+        print("Refusing to package - fix these first:", file=sys.stderr)
+        for problem in problems:
+            print(f"  {problem}", file=sys.stderr)
+        return 1
+
+    report = build_package(answers, Path(args.output), work_dir=Path(args.output).parent)
+    print(report.summary())
+    print(f"\nArchive layout verified: every CSV sits in {SUBMISSION_DIRNAME}/")
+    return 0
+
+
+def _cmd_check(args: argparse.Namespace) -> int:
+    """Validate an existing submission zip without rebuilding it."""
+    from aic.submit.package import verify_package
+    from aic.submit.writer import SubmissionError
+
+    try:
+        names = verify_package(Path(args.zipfile))
+    except (SubmissionError, FileNotFoundError) as exc:
+        print(f"INVALID: {exc}", file=sys.stderr)
+        return 1
+    print(f"VALID: {Path(args.zipfile).name} contains {len(names)} CSV file(s)")
+    for name in sorted(names):
+        print(f"  {name}")
+    return 0
+
+
 def _cmd_eval(args: argparse.Namespace) -> int:
     from aic.eval.run import format_report, run_evaluation
 
@@ -171,6 +239,15 @@ def build_parser() -> argparse.ArgumentParser:
     search.add_argument("query")
     search.add_argument("--top-n", type=int, default=20)
     search.set_defaults(func=_cmd_search)
+
+    package = sub.add_parser("package", help="zip result CSVs into the submission/ layout")
+    package.add_argument("--source", help="folder of result CSVs (default: submissions/)")
+    package.add_argument("-o", "--output", default="submission.zip", help="output .zip path")
+    package.set_defaults(func=_cmd_package)
+
+    check = sub.add_parser("check", help="validate an existing submission zip")
+    check.add_argument("zipfile")
+    check.set_defaults(func=_cmd_check)
 
     evaluate = sub.add_parser("eval", help="score the system on the dev set")
     evaluate.add_argument("--devset")

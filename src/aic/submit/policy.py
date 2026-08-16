@@ -17,6 +17,7 @@ best video and varying individual event frames is worth more than switching vide
 
 from __future__ import annotations
 
+import itertools
 from dataclasses import dataclass, field
 
 from aic.eval.metric import MAX_ANSWERS
@@ -199,8 +200,16 @@ def build_trake_answers(
         return len(rows) >= max_answers
 
     def push(video_id: str, frames: tuple[int, ...]) -> None:
-        """Append unless duplicate or full; see the note in :func:`build_kis_answers`."""
+        """Append unless duplicate, full, or out of chronological order.
+
+        The submission format requires event frame ids to be strictly increasing.
+        Jitter can break that when two events sit closer together than the offset,
+        so such variants are dropped here — one lost variant is far cheaper than an
+        invalid row, which would make the whole file unparseable.
+        """
         clamped = tuple(max(0, f) for f in frames)
+        if any(a >= b for a, b in itertools.pairwise(clamped)):
+            return
         key = (video_id, clamped)
         if key in seen or full():
             return

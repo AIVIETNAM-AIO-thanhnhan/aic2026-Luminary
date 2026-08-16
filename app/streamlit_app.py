@@ -110,6 +110,12 @@ def render_cart(settings: dict, config) -> None:
 def _export(task: str, cart: list[dict], query_id: str, config) -> None:
     """Expand the cart into up to 100 ranked rows and write the CSV."""
     submission = config.submission
+    # The submission format requires the frame count to equal the query's event
+    # count exactly, so take it from the events the operator typed in.
+    events_text = st.session_state.get("events", "") or ""
+    event_lines = [line for line in events_text.splitlines() if line.strip()]
+    expected_events = len(event_lines) if (task == "trake" and event_lines) else None
+
     try:
         if task == "trake":
             candidates = [
@@ -147,12 +153,16 @@ def _export(task: str, cart: list[dict], query_id: str, config) -> None:
             )
 
         path = submission_path(config.submissions_dir, query_id, task)
-        write_submission(rows, path, task)
+        write_submission(rows, path, task, expected_events=expected_events)
     except SubmissionError as exc:
         st.error(f"Không xuất được: {exc}")
         return
 
     st.success(f"Đã ghi {len(rows)} đáp án → `{path}`")
+    st.caption(
+        "Sau khi xuất đủ các truy vấn trong gói, chạy `aic package -o team_round1.zip` "
+        "để đóng gói đúng cấu trúc `submission/` mà BTC yêu cầu."
+    )
     st.download_button(
         "⬇️ Tải file",
         data=path.read_bytes(),

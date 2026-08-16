@@ -103,6 +103,47 @@ aic eval        # cần configs/devset.jsonl
 BTC không cung cấp ground truth, nên phải tự gán nhãn ~30 truy vấn qua giao diện
 Streamlit. Không có bước này thì mọi tinh chỉnh sau đó đều là đoán mò.
 
+### Bước 6 — Đóng gói và nộp lên Codabench
+
+```bash
+aic package -o team_ABC_round1.zip     # gom CSV → submission/ → .zip
+aic check team_ABC_round1.zip          # kiểm tra lại file đã tạo
+```
+
+Tạo đúng cấu trúc BTC yêu cầu, và **đọc ngược file zip để xác nhận** thay vì tin
+vào bước ghi:
+
+```
+team_ABC_round1.zip
+└── submission/
+    ├── query-1-kis.csv
+    ├── query-3-qa.csv
+    └── query-4-trake.csv
+```
+
+Các quy tắc được kiểm tra tự động trước khi ghi — mỗi ràng buộc ứng với một mục
+trong tài liệu *Hướng dẫn nộp bài sơ tuyển*:
+
+| Quy tắc | Kiểm tra ở đâu |
+|---|---|
+| Tối đa 100 dòng mỗi file | `validate_rows` |
+| Tên video **không** có đuôi `.mp4` | `validate_rows` |
+| Answer Q&A ≤ 100 ký tự | `validate_rows` |
+| TRAKE: số frame khớp đúng số events | `validate_rows(expected_events=N)` |
+| TRAKE: frame tăng dần theo thời gian | `validate_rows` + `build_trake_answers` |
+| CSV thuần, UTF-8 không BOM, không header | `write_submission`, `inspect_csv` |
+| Ngoặc kép chỉ khi có dấu phẩy / ngoặc / xuống dòng | `csv.QUOTE_MINIMAL` |
+| Phải có thư mục `submission/` trong zip | `verify_package` |
+| Không nén trực tiếp file CSV | `verify_package` |
+| Không nộp file Excel | `verify_package` |
+
+> **Chỉ được nộp 3 lần mỗi gói, nộp sai định dạng vẫn tính 1 lần.** Vì vậy
+> `aic package` từ chối đóng gói nếu bất kỳ CSV nào không hợp lệ, thay vì tạo ra
+> file zip hỏng.
+
+Số dòng chưa dùng hết (dưới 100) sẽ được cảnh báo: các slot 6–100 gần như miễn phí
+về mặt điểm số, bỏ trống là lãng phí.
+
 ---
 
 ## Kiến trúc

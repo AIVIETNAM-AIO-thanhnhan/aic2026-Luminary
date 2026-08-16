@@ -153,7 +153,7 @@ def test_validate_rejects_bad_submissions() -> None:
 
 def test_validate_rejects_ragged_trake_tuples() -> None:
     rows = [("L10_V010", (1, 2, 3, 4)), ("L10_V010", (1, 2, 3))]
-    with pytest.raises(SubmissionError, match="every answer must cover"):
+    with pytest.raises(SubmissionError, match="counts must match exactly"):
         validate_rows(rows, "trake")
 
 
