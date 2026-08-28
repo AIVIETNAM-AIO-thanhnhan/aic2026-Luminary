@@ -85,6 +85,32 @@ def test_search_by_min_count_filters_and_ranks_by_instance_count() -> None:
         assert [h.gid for h in hits_low_bar] == [2, 1, 3]
 
 
+def test_person_count_includes_gendered_labels() -> None:
+    # Found live: the OpenImages detector labels a human as EITHER "Person" or a
+    # more specific "Man"/"Woman"/"Boy"/"Girl" - never both - so a frame full of
+    # people the detector happened to tag by gender/age had zero "Person"
+    # detections and was invisible to every "Person"-count check. 17.5% of this
+    # corpus's frames were affected.
+    with ObjectIndex(":memory:") as index:
+        index.add_detections(
+            [{"gid": 1, "video_id": "L01_V001", "label": "Man", "score": 0.9}] * 3
+            + [{"gid": 1, "video_id": "L01_V001", "label": "Boy", "score": 0.9}] * 2
+            + [{"gid": 2, "video_id": "L01_V002", "label": "Woman", "score": 0.9}] * 2
+        )
+        assert index.counts_by_gid("Person") == {1: 5, 2: 2}
+        assert [h.gid for h in index.search_by_min_count("Person", min_count=5)] == [1]
+        assert index.search_by_target_count("Person", target_count=2)[0].gid == 2
+
+
+def test_gendered_label_counting_does_not_apply_to_other_labels() -> None:
+    # The "Person" -> gendered-label expansion must not leak into an unrelated
+    # label search (e.g. "Man" as in "Spider-Man" merchandise is nonsensical
+    # here, but the point stands generally: only "person" gets the synonym set).
+    with ObjectIndex(":memory:") as index:
+        index.add_detections([{"gid": 1, "video_id": "L01_V001", "label": "Man", "score": 0.9}] * 3)
+        assert index.counts_by_gid("Hat") == {}
+
+
 def test_search_by_target_count_ranks_exact_match_first() -> None:
     with ObjectIndex(":memory:") as index:
         # gid 1: 1 glasses-wearer (the true "only one" match), gid 2: 5, gid 3: 3.

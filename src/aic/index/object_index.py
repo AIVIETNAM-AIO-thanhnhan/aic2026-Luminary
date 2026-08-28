@@ -32,6 +32,19 @@ CREATE INDEX IF NOT EXISTS idx_detections_gid ON detections(gid);
 
 DEFAULT_SCORE_THRESHOLD = 0.4
 
+#: The OpenImages detector treats "Person" as mutually exclusive with the more
+#: specific "Man"/"Woman"/"Boy"/"Girl" classes - it picks one label per detected
+#: human, not "Person" plus a gendered/age refinement. Found live: a frame with
+#: 5 people, all labeled "Man"/"Boy", had *zero* "Person" detections at all, so
+#: every "Person" instance-count check (search_by_min_count, counts_by_gid, ...)
+#: was silently blind to it despite the frame genuinely satisfying the count.
+#: 30,991 of 177,321 frames (17.5% of the corpus) have a gendered label but no
+#: "Person" label - this is not a rare edge case. "Human face"/"Human body" are
+#: deliberately excluded: a detector can (and does) tag both a "Man" box and a
+#: separate "Human face" box for the *same* individual, so folding those in
+#: would double-count one person as two.
+PERSON_SYNONYMS = ("person", "man", "woman", "boy", "girl")
+
 #: A label present in more than this fraction of all detected frames (e.g.
 #: "Person" at ~39%, "Clothing" at ~46% in this corpus) cannot discriminate
 #: anything - it just becomes a new attractor for any query that mentions
@@ -102,6 +115,12 @@ class ObjectIndex:
         n = int(row["n"])
         return 0 < n <= self.total_frames() * max_fraction
 
+    @staticmethod
+    def _label_group(label: str) -> tuple[str, ...]:
+        """Labels to count together for ``label`` - see PERSON_SYNONYMS."""
+        label = label.strip().lower()
+        return PERSON_SYNONYMS if label == "person" else (label,)
+
     def counts_by_gid(self, label: str) -> dict[int, int]:
         """Every gid's detected instance count for ``label``, for hard-filtering.
 
@@ -110,11 +129,13 @@ class ObjectIndex:
         surfaced via some *other* branch (visual, OCR, ...) actually satisfies a
         count constraint at all, since RRF fusion never enforces that on its own.
         """
-        label = label.strip().lower()
-        if not label:
+        labels = self._label_group(label)
+        if not labels[0]:
             return {}
+        placeholders = ",".join("?" for _ in labels)
         rows = self.conn.execute(
-            "SELECT gid, COUNT(*) AS n FROM detections WHERE LOWER(label) = ? GROUP BY gid", (label,)
+            f"SELECT gid, COUNT(*) AS n FROM detections WHERE LOWER(label) IN ({placeholders}) GROUP BY gid",
+            labels,
         ).fetchall()
         return {int(r["gid"]): int(r["n"]) for r in rows}
 
@@ -129,17 +150,18 @@ class ObjectIndex:
         :meth:`is_discriminative` - a label like "Person" is too common to filter
         on presence alone, but requiring a high count is itself discriminative.
         """
-        label = label.strip().lower()
-        if not label or min_count < 1:
+        labels = self._label_group(label)
+        if not labels[0] or min_count < 1:
             return []
+        placeholders = ",".join("?" for _ in labels)
         rows = self.conn.execute(
             "SELECT gid, video_id, COUNT(*) AS n FROM detections "
-            "WHERE LOWER(label) = ? GROUP BY gid HAVING COUNT(*) >= ? "
+            f"WHERE LOWER(label) IN ({placeholders}) GROUP BY gid HAVING COUNT(*) >= ? "
             "ORDER BY n DESC LIMIT ?",
-            (label, min_count, limit),
+            (*labels, min_count, limit),
         ).fetchall()
         return [
-            ObjectHit(gid=r["gid"], video_id=r["video_id"], label=label, score=float(r["n"]))
+            ObjectHit(gid=r["gid"], video_id=r["video_id"], label=label.strip().lower(), score=float(r["n"]))
             for r in rows
         ]
 
@@ -156,17 +178,18 @@ class ObjectIndex:
         biased towards the truth as detector noise (occlusion, a missed small
         object like glasses) skews real counts down more often than up.
         """
-        label = label.strip().lower()
-        if not label or target_count < 1:
+        labels = self._label_group(label)
+        if not labels[0] or target_count < 1:
             return []
+        placeholders = ",".join("?" for _ in labels)
         rows = self.conn.execute(
             "SELECT gid, video_id, COUNT(*) AS n FROM detections "
-            "WHERE LOWER(label) = ? GROUP BY gid "
+            f"WHERE LOWER(label) IN ({placeholders}) GROUP BY gid "
             "ORDER BY ABS(COUNT(*) - ?) ASC LIMIT ?",
-            (label, target_count, limit),
+            (*labels, target_count, limit),
         ).fetchall()
         return [
-            ObjectHit(gid=r["gid"], video_id=r["video_id"], label=label, score=float(r["n"]))
+            ObjectHit(gid=r["gid"], video_id=r["video_id"], label=label.strip().lower(), score=float(r["n"]))
             for r in rows
         ]
 
