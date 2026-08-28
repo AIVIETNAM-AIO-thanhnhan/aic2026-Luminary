@@ -1,0 +1,4202 @@
+{
+  "query-p1-1-kis": {
+    "task": "kis",
+    "query": "Cảnh quay một nhóm hơn 5 người xếp thành hàng tập thể dục, cùng thực hiện động tác hai tay chạm mũi chân. Trong nhóm chỉ có một người đeo kính và ba người đội nón có màu đỏ.",
+    "hits": [
+      {
+        "video_id": "L30_V046",
+        "frame_idx": 4865,
+        "score": 0.01639344262295082,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L30_V046",
+        "frame_idx": 421,
+        "score": 0.016129032258064516,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L30_V046",
+        "frame_idx": 5052,
+        "score": 0.015873015873015872,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L30_V046",
+        "frame_idx": 3102,
+        "score": 0.015625,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L30_V046",
+        "frame_idx": 1773,
+        "score": 0.015384615384615385,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L30_V046",
+        "frame_idx": 6412,
+        "score": 0.015151515151515152,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L30_V046",
+        "frame_idx": 6328,
+        "score": 0.014925373134328358,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L30_V046",
+        "frame_idx": 6459,
+        "score": 0.014705882352941176,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L30_V046",
+        "frame_idx": 1798,
+        "score": 0.014492753623188406,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L30_V046",
+        "frame_idx": 5132,
+        "score": 0.014285714285714285,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L30_V025",
+        "frame_idx": 1580,
+        "score": 0.014084507042253521,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L30_V025",
+        "frame_idx": 1676,
+        "score": 0.013888888888888888,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L21_V008",
+        "frame_idx": 11855,
+        "score": 0.0136986301369863,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L30_V046",
+        "frame_idx": 3197,
+        "score": 0.013513513513513514,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L30_V046",
+        "frame_idx": 5100,
+        "score": 0.013333333333333334,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L30_V046",
+        "frame_idx": 6784,
+        "score": 0.013157894736842105,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L22_V001",
+        "frame_idx": 31433,
+        "score": 0.012987012987012988,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L30_V046",
+        "frame_idx": 4155,
+        "score": 0.01282051282051282,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L30_V046",
+        "frame_idx": 2650,
+        "score": 0.012658227848101266,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L22_V001",
+        "frame_idx": 31283,
+        "score": 0.0125,
+        "branches": [
+          "visual"
+        ]
+      }
+    ]
+  },
+  "query-p1-10-kis": {
+    "task": "kis",
+    "query": "Hành động cắt chùm nho bằng kéo từ giàn nho bằng một chiếc kéo màu đen. Có thể thấy có một sợi dây màu xanh dương được buộc vào cuống của chùm nho này trước khi nó được cắt.",
+    "hits": [
+      {
+        "video_id": "L29_V013",
+        "frame_idx": 11475,
+        "score": 0.028709349593495935,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V302",
+        "frame_idx": 4402,
+        "score": 0.026312192454893385,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V212",
+        "frame_idx": 2231,
+        "score": 0.025602002164502164,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V053",
+        "frame_idx": 540,
+        "score": 0.02459016393442623,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V053",
+        "frame_idx": 394,
+        "score": 0.023809523809523808,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V053",
+        "frame_idx": 405,
+        "score": 0.023076923076923078,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V212",
+        "frame_idx": 1376,
+        "score": 0.023062558356676005,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V119",
+        "frame_idx": 4113,
+        "score": 0.022727272727272728,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V227",
+        "frame_idx": 1294,
+        "score": 0.022388059701492536,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L27_V011",
+        "frame_idx": 4011,
+        "score": 0.022058823529411766,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L25_V013",
+        "frame_idx": 24149,
+        "score": 0.021739130434782608,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L21_V002",
+        "frame_idx": 8373,
+        "score": 0.02112676056338028,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V197",
+        "frame_idx": 598,
+        "score": 0.020833333333333332,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V197",
+        "frame_idx": 768,
+        "score": 0.02054794520547945,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L29_V013",
+        "frame_idx": 24300,
+        "score": 0.02028493894165536,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V494",
+        "frame_idx": 1488,
+        "score": 0.02027027027027027,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V119",
+        "frame_idx": 4480,
+        "score": 0.02,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V494",
+        "frame_idx": 5616,
+        "score": 0.019736842105263157,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V167",
+        "frame_idx": 4580,
+        "score": 0.01948051948051948,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L27_V011",
+        "frame_idx": 3718,
+        "score": 0.019230769230769232,
+        "branches": [
+          "object"
+        ]
+      }
+    ]
+  },
+  "query-p1-11-kis": {
+    "task": "kis",
+    "query": "Cảnh quay chậm tại vị trí vạch đích của cuộc đua xe đạp. Góc máy sát mặt đường bắt trọn khoảnh khắc về đích theo thứ tự nhất, nhì, ba lần lượt là 1 tay đua áo vàng quần đen, 1 tay đua áo xanh dương quần đen và 1 tay đua áo xanh dương quần đỏ",
+    "hits": [
+      {
+        "video_id": "L23_V002",
+        "frame_idx": 6008,
+        "score": 0.02459016393442623,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V336",
+        "frame_idx": 4516,
+        "score": 0.024193548387096774,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L22_V024",
+        "frame_idx": 29339,
+        "score": 0.023809523809523808,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V340",
+        "frame_idx": 4140,
+        "score": 0.0234375,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L23_V006",
+        "frame_idx": 3250,
+        "score": 0.023076923076923078,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V377",
+        "frame_idx": 4494,
+        "score": 0.022727272727272728,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L23_V001",
+        "frame_idx": 2000,
+        "score": 0.022388059701492536,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V398",
+        "frame_idx": 4038,
+        "score": 0.022058823529411766,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V384",
+        "frame_idx": 877,
+        "score": 0.021739130434782608,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L23_V003",
+        "frame_idx": 750,
+        "score": 0.021672240802675585,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L30_V001",
+        "frame_idx": 1515,
+        "score": 0.02142857142857143,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L23_V006",
+        "frame_idx": 591,
+        "score": 0.021204636672373628,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V266",
+        "frame_idx": 358,
+        "score": 0.02112676056338028,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L27_V015",
+        "frame_idx": 660,
+        "score": 0.020833333333333332,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L23_V006",
+        "frame_idx": 3539,
+        "score": 0.020806779427469082,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L23_V006",
+        "frame_idx": 750,
+        "score": 0.02054794520547945,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V164",
+        "frame_idx": 4558,
+        "score": 0.02027027027027027,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L23_V012",
+        "frame_idx": 369,
+        "score": 0.019928955754061537,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V415",
+        "frame_idx": 2252,
+        "score": 0.019736842105263157,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V194",
+        "frame_idx": 2088,
+        "score": 0.019230769230769232,
+        "branches": [
+          "object"
+        ]
+      }
+    ]
+  },
+  "query-p1-12-kis": {
+    "task": "kis",
+    "query": "Có thể thấy trong cảnh quay có 4 tài xế xe ôm công nghệ trong trạm xăng, trong đó 3 người đứng đợi còn 1 người lái xe từ trái sang phải khung hình. Trước đó là cảnh một người đậy nắp bình xăng xe máy của họ. Có thông tin về giá dầu mazut được hiển thị trong khung hình.",
+    "hits": [
+      {
+        "video_id": "L22_V016",
+        "frame_idx": 33548,
+        "score": 0.02459016393442623,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L21_V026",
+        "frame_idx": 33807,
+        "score": 0.024325753569539928,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L28_V007",
+        "frame_idx": 5798,
+        "score": 0.024193548387096774,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L22_V016",
+        "frame_idx": 32812,
+        "score": 0.023809523809523808,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L28_V007",
+        "frame_idx": 5805,
+        "score": 0.0234375,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L22_V016",
+        "frame_idx": 32925,
+        "score": 0.023076923076923078,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L29_V019",
+        "frame_idx": 10176,
+        "score": 0.022727272727272728,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L22_V016",
+        "frame_idx": 33322,
+        "score": 0.022696619276096137,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L22_V008",
+        "frame_idx": 23422,
+        "score": 0.022388059701492536,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L21_V029",
+        "frame_idx": 32931,
+        "score": 0.022358490566037736,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L29_V021",
+        "frame_idx": 2700,
+        "score": 0.022058823529411766,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L22_V001",
+        "frame_idx": 32037,
+        "score": 0.021739130434782608,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L29_V019",
+        "frame_idx": 4085,
+        "score": 0.02142857142857143,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L30_V053",
+        "frame_idx": 535,
+        "score": 0.02115015502731434,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L28_V001",
+        "frame_idx": 7965,
+        "score": 0.020833333333333332,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L27_V002",
+        "frame_idx": 6345,
+        "score": 0.02054794520547945,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L22_V002",
+        "frame_idx": 22644,
+        "score": 0.02037725457799807,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L28_V002",
+        "frame_idx": 6750,
+        "score": 0.02027027027027027,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L28_V009",
+        "frame_idx": 27793,
+        "score": 0.019736842105263157,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L28_V001",
+        "frame_idx": 11880,
+        "score": 0.019524382344776534,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      }
+    ]
+  },
+  "query-p1-13-kis": {
+    "task": "kis",
+    "query": "Một người đứng dưới nước và rọi đèn. Tiếp theo là cảnh người này kéo lưới cá lúc bình minh, sau đó được một nhóm người khác tiến đến dùng máy quay ghi hình.",
+    "hits": [
+      {
+        "video_id": "L29_V006",
+        "frame_idx": 20394,
+        "score": 0.01639344262295082,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L29_V021",
+        "frame_idx": 2824,
+        "score": 0.016129032258064516,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L29_V006",
+        "frame_idx": 20386,
+        "score": 0.015873015873015872,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L29_V006",
+        "frame_idx": 20385,
+        "score": 0.015625,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L22_V005",
+        "frame_idx": 19284,
+        "score": 0.015384615384615385,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L22_V031",
+        "frame_idx": 15388,
+        "score": 0.015151515151515152,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L22_V020",
+        "frame_idx": 19275,
+        "score": 0.014925373134328358,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L21_V023",
+        "frame_idx": 716,
+        "score": 0.014705882352941176,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L29_V021",
+        "frame_idx": 2835,
+        "score": 0.014492753623188406,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L22_V006",
+        "frame_idx": 18971,
+        "score": 0.014285714285714285,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L22_V005",
+        "frame_idx": 19449,
+        "score": 0.014084507042253521,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L21_V023",
+        "frame_idx": 1932,
+        "score": 0.013888888888888888,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L28_V005",
+        "frame_idx": 10559,
+        "score": 0.0136986301369863,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L22_V030",
+        "frame_idx": 1294,
+        "score": 0.013513513513513514,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L21_V017",
+        "frame_idx": 15060,
+        "score": 0.013333333333333334,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L22_V010",
+        "frame_idx": 19436,
+        "score": 0.013157894736842105,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L22_V022",
+        "frame_idx": 9630,
+        "score": 0.012987012987012988,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L22_V016",
+        "frame_idx": 23910,
+        "score": 0.01282051282051282,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L22_V003",
+        "frame_idx": 29992,
+        "score": 0.012658227848101266,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L21_V007",
+        "frame_idx": 23964,
+        "score": 0.0125,
+        "branches": [
+          "visual"
+        ]
+      }
+    ]
+  },
+  "query-p1-14-kis": {
+    "task": "kis",
+    "query": "Người đầu bếp lần lượt đặt các miếng nguyên liệu dạng thanh và những lát cắt hình hoa vào một đĩa đang được hấp trong nồi.\nCác nguyên liệu được dùng đũa sắp xếp xen kẽ xung quanh phần thức ăn đã có sẵn trên đĩa.\nSau đó, đầu bếp dùng muỗng lấy thêm một loại nguyên liệu mềm từ tô thủy tinh.\nPhần nguyên liệu này được đặt vào giữa đĩa, xung quanh là các miếng dạng thanh và hình hoa đã được sắp xếp trước đó.",
+    "hits": [
+      {
+        "video_id": "L26_V481",
+        "frame_idx": 3100,
+        "score": 0.026011392699372242,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V456",
+        "frame_idx": 5975,
+        "score": 0.02505613390487855,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V048",
+        "frame_idx": 2295,
+        "score": 0.02459016393442623,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V196",
+        "frame_idx": 5760,
+        "score": 0.024193548387096774,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V160",
+        "frame_idx": 2560,
+        "score": 0.023809523809523808,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V283",
+        "frame_idx": 7040,
+        "score": 0.023544973544973542,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V196",
+        "frame_idx": 5751,
+        "score": 0.0234375,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V137",
+        "frame_idx": 5212,
+        "score": 0.023076923076923078,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V184",
+        "frame_idx": 4992,
+        "score": 0.022727272727272728,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V048",
+        "frame_idx": 6884,
+        "score": 0.022388059701492536,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V110",
+        "frame_idx": 2678,
+        "score": 0.021739130434782608,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V136",
+        "frame_idx": 4992,
+        "score": 0.02142857142857143,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V404",
+        "frame_idx": 2048,
+        "score": 0.02112676056338028,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V475",
+        "frame_idx": 5644,
+        "score": 0.020833333333333332,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V160",
+        "frame_idx": 2528,
+        "score": 0.02054794520547945,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V458",
+        "frame_idx": 1024,
+        "score": 0.02027027027027027,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V019",
+        "frame_idx": 3377,
+        "score": 0.02,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V184",
+        "frame_idx": 6042,
+        "score": 0.019736842105263157,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V096",
+        "frame_idx": 5167,
+        "score": 0.01948051948051948,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V184",
+        "frame_idx": 5888,
+        "score": 0.019230769230769232,
+        "branches": [
+          "object"
+        ]
+      }
+    ]
+  },
+  "query-p1-15-qa": {
+    "task": "qa",
+    "query": "Bản đồ phân bố động đất tại một vùng trên thế giới, với một bảng chú giải phía bên trái gồm các kí hiệu nhiều màu sắc tương ứng với các vị trí tâm chấn có cấp độ động đất khác nhau. Không tính bảng chú giải, có bao nhiêu vị trí ghi nhận động đất cấp độ 4?",
+    "hits": [
+      {
+        "video_id": "L21_V006",
+        "frame_idx": 1653,
+        "score": 0.01639344262295082,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L21_V006",
+        "frame_idx": 561,
+        "score": 0.016129032258064516,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L21_V006",
+        "frame_idx": 1860,
+        "score": 0.015873015873015872,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L21_V006",
+        "frame_idx": 2919,
+        "score": 0.015625,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V007",
+        "frame_idx": 45494,
+        "score": 0.015384615384615385,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V007",
+        "frame_idx": 45644,
+        "score": 0.015151515151515152,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V007",
+        "frame_idx": 45794,
+        "score": 0.014925373134328358,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L21_V010",
+        "frame_idx": 19740,
+        "score": 0.014705882352941176,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V007",
+        "frame_idx": 44144,
+        "score": 0.014492753623188406,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V007",
+        "frame_idx": 43994,
+        "score": 0.014285714285714285,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V076",
+        "frame_idx": 9150,
+        "score": 0.014084507042253521,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V007",
+        "frame_idx": 44294,
+        "score": 0.013888888888888888,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V076",
+        "frame_idx": 9300,
+        "score": 0.0136986301369863,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V076",
+        "frame_idx": 10050,
+        "score": 0.013513513513513514,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V076",
+        "frame_idx": 9450,
+        "score": 0.013333333333333334,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V007",
+        "frame_idx": 36240,
+        "score": 0.013157894736842105,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L22_V009",
+        "frame_idx": 9504,
+        "score": 0.012987012987012988,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L21_V010",
+        "frame_idx": 19500,
+        "score": 0.01282051282051282,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V007",
+        "frame_idx": 35790,
+        "score": 0.012658227848101266,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V007",
+        "frame_idx": 35940,
+        "score": 0.0125,
+        "branches": [
+          "visual"
+        ]
+      }
+    ]
+  },
+  "query-p1-16-trake": {
+    "task": "trake",
+    "query": "Đoạn video bắt đầu bằng ảnh cận đầu một con lân trắng, mũi đỏ, bên cạnh lá cờ trắng viền đỏ.\nE1 Khoảnh khắc đầu tiên xuất hiện đầy đủ hai con rồng vàng đang xoay vòng.\nE2 Khoảnh khắc đầu tiên con lân hoàn tất cú xoay người trên các thanh trụ (thời điểm đâu tiên các chân của lân đặt trên trụ sau khi xoay).\nE3 Khoảnh khắc đầu tiên dùi chạm vào kẻng đồng múa lân.",
+    "hits": [
+      {
+        "video_id": "L22_V011",
+        "frame_idx": 956,
+        "score": 0.02459016393442623,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L29_V006",
+        "frame_idx": 9720,
+        "score": 0.024193548387096774,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L22_V023",
+        "frame_idx": 15765,
+        "score": 0.023809523809523808,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L29_V006",
+        "frame_idx": 9696,
+        "score": 0.0234375,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L21_V019",
+        "frame_idx": 5709,
+        "score": 0.023076923076923078,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L22_V006",
+        "frame_idx": 12185,
+        "score": 0.022727272727272728,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L22_V018",
+        "frame_idx": 17498,
+        "score": 0.022388059701492536,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L27_V014",
+        "frame_idx": 1080,
+        "score": 0.022058823529411766,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L21_V026",
+        "frame_idx": 25367,
+        "score": 0.021739130434782608,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L22_V023",
+        "frame_idx": 850,
+        "score": 0.02142857142857143,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L21_V015",
+        "frame_idx": 23958,
+        "score": 0.02112676056338028,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L22_V009",
+        "frame_idx": 11041,
+        "score": 0.020833333333333332,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L21_V001",
+        "frame_idx": 858,
+        "score": 0.02054794520547945,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L21_V019",
+        "frame_idx": 9192,
+        "score": 0.02027027027027027,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L22_V031",
+        "frame_idx": 1170,
+        "score": 0.02,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L27_V014",
+        "frame_idx": 8775,
+        "score": 0.019736842105263157,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L24_V042",
+        "frame_idx": 14136,
+        "score": 0.01970811307745346,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L21_V002",
+        "frame_idx": 2331,
+        "score": 0.01948051948051948,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L28_V017",
+        "frame_idx": 15119,
+        "score": 0.019230769230769232,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L22_V006",
+        "frame_idx": 16733,
+        "score": 0.0189873417721519,
+        "branches": [
+          "object"
+        ]
+      }
+    ]
+  },
+  "query-p1-17-qa": {
+    "task": "qa",
+    "query": "Đoạn clip mô tả hậu quả của hiện tượng sạt lở đất nghiêm trọng, đất đá tràn xuống gây tắc nghẽn hoàn toàn một đoạn đường đèo. Trong một cảnh quay cận, có thể thấy một cột mốc đường bộ với phần đỉnh màu đỏ chỉ còn lộ ra phần trên, phần lớn đã bị đất đá vùi lấp. Ở cảnh quay cuối, một người đi xe máy đang vật lộn để điều khiển phương tiện vượt qua khu vực bùn lầy, trên chiếc xe máy có treo một vật màu xanh lá. Tên của con đèo là gì?",
+    "hits": [
+      {
+        "video_id": "L22_V016",
+        "frame_idx": 33548,
+        "score": 0.02459016393442623,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L21_V029",
+        "frame_idx": 32931,
+        "score": 0.024540213107575537,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L22_V016",
+        "frame_idx": 32812,
+        "score": 0.024193548387096774,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L22_V016",
+        "frame_idx": 32925,
+        "score": 0.023809523809523808,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L22_V008",
+        "frame_idx": 23422,
+        "score": 0.0234375,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L22_V001",
+        "frame_idx": 32037,
+        "score": 0.023076923076923078,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L21_V029",
+        "frame_idx": 32961,
+        "score": 0.02282781502730352,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L22_V016",
+        "frame_idx": 33322,
+        "score": 0.022727272727272728,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L27_V002",
+        "frame_idx": 6345,
+        "score": 0.022388059701492536,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L28_V001",
+        "frame_idx": 11880,
+        "score": 0.021919879062736205,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L30_V053",
+        "frame_idx": 535,
+        "score": 0.021739130434782608,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L22_V016",
+        "frame_idx": 33382,
+        "score": 0.02142857142857143,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L22_V002",
+        "frame_idx": 22644,
+        "score": 0.02112676056338028,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L30_V046",
+        "frame_idx": 1174,
+        "score": 0.020833333333333332,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L23_V019",
+        "frame_idx": 3900,
+        "score": 0.02054794520547945,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L21_V009",
+        "frame_idx": 9834,
+        "score": 0.02049947362264592,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L22_V017",
+        "frame_idx": 25225,
+        "score": 0.02,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L21_V030",
+        "frame_idx": 14412,
+        "score": 0.019736842105263157,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L22_V016",
+        "frame_idx": 29310,
+        "score": 0.019593073043864376,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L22_V020",
+        "frame_idx": 8063,
+        "score": 0.019577569169960472,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      }
+    ]
+  },
+  "query-p1-18-kis": {
+    "task": "kis",
+    "query": "Cảnh quay cho thấy hành động trình bày món ăn sau khi hoàn thành giai đoạn chế biến. Bún được cho đầu tiên vào một chén rỗng, sau đó đầu bếp lần lượt cho từng vá nước dùng cùng các nguyên liệu như thịt gà, cà rốt, sả, nấm mèo vào chén bún, và kết thúc bằng việc thả một cọng ngò lên trên cùng. Cảnh quay tiếp theo là cảnh zoom xa dần chén bún, ta thấy bên cạnh chén bún còn có 1 chén nước chấm nhỏ với 2 miếng ớt.",
+    "hits": [
+      {
+        "video_id": "L26_V188",
+        "frame_idx": 6547,
+        "score": 0.02629781420765027,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V048",
+        "frame_idx": 2295,
+        "score": 0.02459016393442623,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V160",
+        "frame_idx": 2560,
+        "score": 0.024193548387096774,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V137",
+        "frame_idx": 5212,
+        "score": 0.023809523809523808,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V481",
+        "frame_idx": 3100,
+        "score": 0.0234375,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V136",
+        "frame_idx": 4992,
+        "score": 0.023076923076923078,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V404",
+        "frame_idx": 2048,
+        "score": 0.022727272727272728,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V160",
+        "frame_idx": 2528,
+        "score": 0.022388059701492536,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V184",
+        "frame_idx": 6042,
+        "score": 0.022058823529411766,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V493",
+        "frame_idx": 6076,
+        "score": 0.021983763363073706,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V184",
+        "frame_idx": 5888,
+        "score": 0.021739130434782608,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V339",
+        "frame_idx": 2816,
+        "score": 0.02142857142857143,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V072",
+        "frame_idx": 6820,
+        "score": 0.021386871379976094,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V102",
+        "frame_idx": 2471,
+        "score": 0.02112676056338028,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V456",
+        "frame_idx": 5975,
+        "score": 0.021020408163265305,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V018",
+        "frame_idx": 540,
+        "score": 0.02027027027027027,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V321",
+        "frame_idx": 1920,
+        "score": 0.02,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V147",
+        "frame_idx": 3066,
+        "score": 0.019736842105263157,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V259",
+        "frame_idx": 5902,
+        "score": 0.01948051948051948,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V346",
+        "frame_idx": 2624,
+        "score": 0.019230769230769232,
+        "branches": [
+          "object"
+        ]
+      }
+    ]
+  },
+  "query-p1-19-kis": {
+    "task": "kis",
+    "query": "Con lân do hai người điều khiển đang đứng thẳng và xoay vòng trên đỉnh cột. Sau vài giây nghỉ, con lân bất ngờ nhảy qua hai chiếc cột kế bên, chúi đầu xuống ngoạm lấy quả bí đỏ kèm bông hoa màu vàng. Cảnh quay kết thúc khi con lân tiếp tục nhảy sang các cột tiếp theo.",
+    "hits": [
+      {
+        "video_id": "L29_V006",
+        "frame_idx": 9720,
+        "score": 0.02459016393442623,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L29_V006",
+        "frame_idx": 9696,
+        "score": 0.024193548387096774,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L21_V019",
+        "frame_idx": 5709,
+        "score": 0.023809523809523808,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L27_V014",
+        "frame_idx": 1080,
+        "score": 0.0234375,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L21_V026",
+        "frame_idx": 25367,
+        "score": 0.023076923076923078,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L21_V015",
+        "frame_idx": 23958,
+        "score": 0.022727272727272728,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L21_V019",
+        "frame_idx": 9192,
+        "score": 0.022388059701492536,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L27_V014",
+        "frame_idx": 8775,
+        "score": 0.022058823529411766,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L28_V017",
+        "frame_idx": 15119,
+        "score": 0.021739130434782608,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L22_V006",
+        "frame_idx": 16733,
+        "score": 0.02142857142857143,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V209",
+        "frame_idx": 4730,
+        "score": 0.02112676056338028,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L22_V011",
+        "frame_idx": 28859,
+        "score": 0.020833333333333332,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V209",
+        "frame_idx": 4710,
+        "score": 0.02054794520547945,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V451",
+        "frame_idx": 3260,
+        "score": 0.02027027027027027,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V121",
+        "frame_idx": 4446,
+        "score": 0.02,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L27_V015",
+        "frame_idx": 78,
+        "score": 0.019736842105263157,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L29_V019",
+        "frame_idx": 20115,
+        "score": 0.01948051948051948,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L27_V014",
+        "frame_idx": 7631,
+        "score": 0.019230769230769232,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V209",
+        "frame_idx": 4741,
+        "score": 0.0189873417721519,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L22_V017",
+        "frame_idx": 19730,
+        "score": 0.01875,
+        "branches": [
+          "object"
+        ]
+      }
+    ]
+  },
+  "query-p1-2-kis": {
+    "task": "kis",
+    "query": "Đoạn phim bắt đầu bằng một bản đồ, trên đó một loại công trình thủy lợi lần lượt xuất hiện bốn lần. Sau đó chuyển sang cảnh một con đập được quay từ trên cao, tiếp đến là cảnh cận con đập dưới trời mưa.",
+    "hits": [
+      {
+        "video_id": "L21_V007",
+        "frame_idx": 2414,
+        "score": 0.01639344262295082,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L21_V003",
+        "frame_idx": 1430,
+        "score": 0.016129032258064516,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L21_V007",
+        "frame_idx": 2588,
+        "score": 0.015873015873015872,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L21_V003",
+        "frame_idx": 1590,
+        "score": 0.015625,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L21_V003",
+        "frame_idx": 390,
+        "score": 0.015384615384615385,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L21_V003",
+        "frame_idx": 1739,
+        "score": 0.015151515151515152,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L21_V003",
+        "frame_idx": 361,
+        "score": 0.014925373134328358,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L21_V003",
+        "frame_idx": 2220,
+        "score": 0.014705882352941176,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L28_V006",
+        "frame_idx": 25644,
+        "score": 0.014492753623188406,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L28_V006",
+        "frame_idx": 25643,
+        "score": 0.014285714285714285,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L21_V003",
+        "frame_idx": 1988,
+        "score": 0.014084507042253521,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L28_V006",
+        "frame_idx": 25645,
+        "score": 0.013888888888888888,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L22_V012",
+        "frame_idx": 15363,
+        "score": 0.0136986301369863,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L29_V020",
+        "frame_idx": 2992,
+        "score": 0.013513513513513514,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L22_V020",
+        "frame_idx": 4025,
+        "score": 0.013333333333333334,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L27_V016",
+        "frame_idx": 1298,
+        "score": 0.013157894736842105,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L28_V008",
+        "frame_idx": 17685,
+        "score": 0.012987012987012988,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L28_V008",
+        "frame_idx": 17550,
+        "score": 0.01282051282051282,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L28_V006",
+        "frame_idx": 25639,
+        "score": 0.012658227848101266,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L28_V011",
+        "frame_idx": 10530,
+        "score": 0.0125,
+        "branches": [
+          "visual"
+        ]
+      }
+    ]
+  },
+  "query-p1-20-kis": {
+    "task": "kis",
+    "query": "Ba người đang đi bộ xuống một con dốc trong cơn mưa, có 2 người cầm dù, trong đó người cầm dù đi sau lại mặc một chiếc áo mưa có in hình con gấu ở sau lưng. Sau đó ta thấy nhiều người đang cùng nhau bước về hướng một căn nhà thông qua một con đường đất, bên cạnh là một cái ao.",
+    "hits": [
+      {
+        "video_id": "L21_V026",
+        "frame_idx": 8724,
+        "score": 0.039974779319041615,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L22_V001",
+        "frame_idx": 11211,
+        "score": 0.03736413043478261,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L21_V029",
+        "frame_idx": 9510,
+        "score": 0.03606393606393607,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L21_V026",
+        "frame_idx": 7434,
+        "score": 0.0358739621034703,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L21_V028",
+        "frame_idx": 26330,
+        "score": 0.035211267605633804,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L22_V001",
+        "frame_idx": 10974,
+        "score": 0.03337041156840934,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L22_V001",
+        "frame_idx": 11034,
+        "score": 0.032782515991471216,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L22_V001",
+        "frame_idx": 11181,
+        "score": 0.031278962001853566,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L22_V001",
+        "frame_idx": 4905,
+        "score": 0.025151515151515154,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L22_V004",
+        "frame_idx": 31344,
+        "score": 0.024556907964979714,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L29_V007",
+        "frame_idx": 8640,
+        "score": 0.024450671225937182,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L22_V003",
+        "frame_idx": 18467,
+        "score": 0.024193548387096774,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L21_V007",
+        "frame_idx": 21516,
+        "score": 0.023767752715121136,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L27_V015",
+        "frame_idx": 3854,
+        "score": 0.022727272727272728,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L30_V090",
+        "frame_idx": 3511,
+        "score": 0.022388059701492536,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L21_V015",
+        "frame_idx": 6129,
+        "score": 0.022058823529411766,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L21_V027",
+        "frame_idx": 13640,
+        "score": 0.02162251655629139,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L27_V015",
+        "frame_idx": 3899,
+        "score": 0.02142857142857143,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L27_V015",
+        "frame_idx": 3915,
+        "score": 0.020833333333333332,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L28_V022",
+        "frame_idx": 14715,
+        "score": 0.02054794520547945,
+        "branches": [
+          "object"
+        ]
+      }
+    ]
+  },
+  "query-p1-21-kis": {
+    "task": "kis",
+    "query": "Cảnh quay bắt đầu bằng cảnh những con tôm đã được lột vỏ và nấu chín đang nằm trên dĩa, phía sau là người đầu bếp đang đặt 3 ổ bánh mì lên bàn. Sau đó là cảnh quay các đầu bếp, có người thì trang trí món ăn, có người thì chế biến món ăn. Những con tôm được cắt làm đôi và được nướng trên bếp.",
+    "hits": [
+      {
+        "video_id": "L26_V212",
+        "frame_idx": 6656,
+        "score": 0.026494925839188135,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V212",
+        "frame_idx": 6643,
+        "score": 0.0255700871898055,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V426",
+        "frame_idx": 6348,
+        "score": 0.024193548387096774,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V364",
+        "frame_idx": 1341,
+        "score": 0.0234375,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V284",
+        "frame_idx": 6884,
+        "score": 0.023076923076923078,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V428",
+        "frame_idx": 1152,
+        "score": 0.022727272727272728,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V289",
+        "frame_idx": 2048,
+        "score": 0.022388059701492536,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V364",
+        "frame_idx": 1408,
+        "score": 0.022058823529411766,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V148",
+        "frame_idx": 1280,
+        "score": 0.021739130434782608,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V406",
+        "frame_idx": 2176,
+        "score": 0.02142857142857143,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V161",
+        "frame_idx": 384,
+        "score": 0.02112676056338028,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V399",
+        "frame_idx": 5504,
+        "score": 0.020833333333333332,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V148",
+        "frame_idx": 1267,
+        "score": 0.02054794520547945,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V169",
+        "frame_idx": 5431,
+        "score": 0.020408805031446542,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V213",
+        "frame_idx": 512,
+        "score": 0.02027027027027027,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V161",
+        "frame_idx": 6902,
+        "score": 0.02,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V219",
+        "frame_idx": 6817,
+        "score": 0.019736842105263157,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V399",
+        "frame_idx": 5376,
+        "score": 0.01964766606822262,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V206",
+        "frame_idx": 1512,
+        "score": 0.01948051948051948,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L26_V310",
+        "frame_idx": 5085,
+        "score": 0.019230769230769232,
+        "branches": [
+          "object"
+        ]
+      }
+    ]
+  },
+  "query-p1-22-kis": {
+    "task": "kis",
+    "query": "Người phụ nữ mặc áo dài màu hồng, đeo kính đang giảng giải về các trường hợp sử dụng khác nhau của động từ 'remember' dựa trên mốc thời gian của hành động được nhắc tới.",
+    "hits": [
+      {
+        "video_id": "L25_V044",
+        "frame_idx": 10800,
+        "score": 0.01639344262295082,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V044",
+        "frame_idx": 10350,
+        "score": 0.016129032258064516,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V044",
+        "frame_idx": 11550,
+        "score": 0.015873015873015872,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V044",
+        "frame_idx": 11250,
+        "score": 0.015625,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V044",
+        "frame_idx": 10500,
+        "score": 0.015384615384615385,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V044",
+        "frame_idx": 10200,
+        "score": 0.015151515151515152,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V044",
+        "frame_idx": 11400,
+        "score": 0.014925373134328358,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V044",
+        "frame_idx": 10650,
+        "score": 0.014705882352941176,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V044",
+        "frame_idx": 10950,
+        "score": 0.014492753623188406,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V044",
+        "frame_idx": 11100,
+        "score": 0.014285714285714285,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V044",
+        "frame_idx": 9750,
+        "score": 0.014084507042253521,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V044",
+        "frame_idx": 10050,
+        "score": 0.013888888888888888,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V044",
+        "frame_idx": 9600,
+        "score": 0.0136986301369863,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V044",
+        "frame_idx": 9900,
+        "score": 0.013513513513513514,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V053",
+        "frame_idx": 21450,
+        "score": 0.013333333333333334,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V053",
+        "frame_idx": 21750,
+        "score": 0.013157894736842105,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V044",
+        "frame_idx": 9150,
+        "score": 0.012987012987012988,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V053",
+        "frame_idx": 21600,
+        "score": 0.01282051282051282,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V044",
+        "frame_idx": 9450,
+        "score": 0.012658227848101266,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V053",
+        "frame_idx": 21300,
+        "score": 0.0125,
+        "branches": [
+          "visual"
+        ]
+      }
+    ]
+  },
+  "query-p1-23-kis": {
+    "task": "kis",
+    "query": "Hình ảnh giáo viên nam mặc sơ mi trắng, thắt cà vạt tối màu, nổi bật trên phông nền xanh dương đậm có hoa văn mờ.\n\nSlide bài giảng Nền trắng với khung viền màu hồng tím, phía trên có thanh tiêu đề xanh dương chứa họa tiết địa cầu và mũi tên vàng/xanh ngọc. Bên dưới là sơ đồ 3 tầng được liên kết bởi các mũi tên xanh ngọc trỏ xuống:\n\nTầng 1: 2 khối hộp được bao bởi 1 khối hộp cam.\n\nTầng 2: 1 khối hộp lớn màu xanh dương đậm ở chính giữa.\n\nTầng 3: 2 khối hộp được bao bởi 1 khối hộp xanh lá cây.",
+    "hits": [
+      {
+        "video_id": "L22_V008",
+        "frame_idx": 9615,
+        "score": 0.02459016393442623,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L28_V006",
+        "frame_idx": 16875,
+        "score": 0.024193548387096774,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L25_V070",
+        "frame_idx": 1351,
+        "score": 0.023809523809523808,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L30_V006",
+        "frame_idx": 3025,
+        "score": 0.0234375,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L25_V043",
+        "frame_idx": 40882,
+        "score": 0.023076923076923078,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L30_V006",
+        "frame_idx": 2840,
+        "score": 0.022727272727272728,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L25_V039",
+        "frame_idx": 36742,
+        "score": 0.022388059701492536,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L28_V006",
+        "frame_idx": 16463,
+        "score": 0.022058823529411766,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L25_V052",
+        "frame_idx": 1471,
+        "score": 0.021739130434782608,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L28_V006",
+        "frame_idx": 16470,
+        "score": 0.02142857142857143,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L25_V037",
+        "frame_idx": 19200,
+        "score": 0.02112676056338028,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L30_V006",
+        "frame_idx": 2901,
+        "score": 0.020833333333333332,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L25_V031",
+        "frame_idx": 856,
+        "score": 0.02054794520547945,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L29_V018",
+        "frame_idx": 6687,
+        "score": 0.02027027027027027,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L25_V021",
+        "frame_idx": 29345,
+        "score": 0.02,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L30_V049",
+        "frame_idx": 1397,
+        "score": 0.019736842105263157,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L25_V057",
+        "frame_idx": 28313,
+        "score": 0.01948051948051948,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L28_V006",
+        "frame_idx": 11028,
+        "score": 0.019230769230769232,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L25_V058",
+        "frame_idx": 33165,
+        "score": 0.0189873417721519,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L30_V049",
+        "frame_idx": 1829,
+        "score": 0.01875,
+        "branches": [
+          "object"
+        ]
+      }
+    ]
+  },
+  "query-p1-24-kis": {
+    "task": "kis",
+    "query": "Đoạn clip được cắt từ một phóng sự về một nhóm các nghệ nhân làm nghề đan lát các sản phẩm thủ công từ cây lục bình. Đầu tiên là một cảnh lia cam duy nhất từ trái sang phải, theo thứ tự ta thấy 4 sản phẩm: túi xách, chậu hoa, bộ ấm tách trà và túi xách. Ngay sau cảnh này, người phụ nữ bên trái lấy một tách trà trong bộ ấm tách và nâng niu trong khi nghe người phụ nữ bên phải trò chuyện.",
+    "hits": [
+      {
+        "video_id": "L29_V001",
+        "frame_idx": 22339,
+        "score": 0.01639344262295082,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L29_V001",
+        "frame_idx": 4050,
+        "score": 0.016129032258064516,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L29_V001",
+        "frame_idx": 22350,
+        "score": 0.015873015873015872,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L29_V001",
+        "frame_idx": 9000,
+        "score": 0.015625,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L29_V010",
+        "frame_idx": 20710,
+        "score": 0.015384615384615385,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L29_V001",
+        "frame_idx": 24821,
+        "score": 0.015151515151515152,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L29_V001",
+        "frame_idx": 25350,
+        "score": 0.014925373134328358,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L29_V010",
+        "frame_idx": 20709,
+        "score": 0.014705882352941176,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L29_V001",
+        "frame_idx": 24900,
+        "score": 0.014492753623188406,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L29_V001",
+        "frame_idx": 8850,
+        "score": 0.014285714285714285,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L29_V010",
+        "frame_idx": 20813,
+        "score": 0.014084507042253521,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L29_V010",
+        "frame_idx": 19025,
+        "score": 0.013888888888888888,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L29_V001",
+        "frame_idx": 9590,
+        "score": 0.0136986301369863,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L29_V001",
+        "frame_idx": 9900,
+        "score": 0.013513513513513514,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L29_V001",
+        "frame_idx": 8448,
+        "score": 0.013333333333333334,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L29_V001",
+        "frame_idx": 9745,
+        "score": 0.013157894736842105,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L29_V010",
+        "frame_idx": 19035,
+        "score": 0.012987012987012988,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L29_V001",
+        "frame_idx": 8700,
+        "score": 0.01282051282051282,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L29_V001",
+        "frame_idx": 9303,
+        "score": 0.012658227848101266,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L29_V001",
+        "frame_idx": 9150,
+        "score": 0.0125,
+        "branches": [
+          "visual"
+        ]
+      }
+    ]
+  },
+  "query-p1-25-kis": {
+    "task": "kis",
+    "query": "Hai bạn học sinh mặc đồng phục áo trắng, quần xanh, quàng khăn đỏ đang làm MC trên một sân khấu tại trường học, phía sau là một bộ trống cơ màu đỏ và một cây đàn piano.",
+    "hits": [
+      {
+        "video_id": "L21_V005",
+        "frame_idx": 5754,
+        "score": 0.01639344262295082,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V087",
+        "frame_idx": 3300,
+        "score": 0.016129032258064516,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V077",
+        "frame_idx": 42314,
+        "score": 0.015873015873015872,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V084",
+        "frame_idx": 1919,
+        "score": 0.015625,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V073",
+        "frame_idx": 32700,
+        "score": 0.015384615384615385,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V024",
+        "frame_idx": 35300,
+        "score": 0.015151515151515152,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V071",
+        "frame_idx": 24000,
+        "score": 0.014925373134328358,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V038",
+        "frame_idx": 33600,
+        "score": 0.014705882352941176,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V027",
+        "frame_idx": 2850,
+        "score": 0.014492753623188406,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V041",
+        "frame_idx": 35145,
+        "score": 0.014285714285714285,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V071",
+        "frame_idx": 24150,
+        "score": 0.014084507042253521,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V088",
+        "frame_idx": 2064,
+        "score": 0.013888888888888888,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V072",
+        "frame_idx": 21750,
+        "score": 0.0136986301369863,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V026",
+        "frame_idx": 8290,
+        "score": 0.013513513513513514,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V023",
+        "frame_idx": 36398,
+        "score": 0.013333333333333334,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V088",
+        "frame_idx": 2216,
+        "score": 0.013157894736842105,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V004",
+        "frame_idx": 25799,
+        "score": 0.012987012987012988,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V009",
+        "frame_idx": 20579,
+        "score": 0.01282051282051282,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V086",
+        "frame_idx": 14700,
+        "score": 0.012658227848101266,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V007",
+        "frame_idx": 67805,
+        "score": 0.0125,
+        "branches": [
+          "visual"
+        ]
+      }
+    ]
+  },
+  "query-p1-3-qa": {
+    "task": "qa",
+    "query": "Hình ảnh một con cá được đặt lên cân, sau đó có cảnh một con cá khác cùng loại bị một người cầm đuôi. Con số hiển thị cuối cùng trên cân là bao nhiêu?",
+    "hits": [
+      {
+        "video_id": "L29_V008",
+        "frame_idx": 16909,
+        "score": 0.01639344262295082,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L21_V013",
+        "frame_idx": 8346,
+        "score": 0.016129032258064516,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L21_V015",
+        "frame_idx": 11313,
+        "score": 0.015873015873015872,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L28_V004",
+        "frame_idx": 4284,
+        "score": 0.015625,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L29_V008",
+        "frame_idx": 13834,
+        "score": 0.015384615384615385,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L29_V008",
+        "frame_idx": 13905,
+        "score": 0.015151515151515152,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L29_V008",
+        "frame_idx": 15390,
+        "score": 0.014925373134328358,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V066",
+        "frame_idx": 4349,
+        "score": 0.014705882352941176,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V066",
+        "frame_idx": 4499,
+        "score": 0.014492753623188406,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V384",
+        "frame_idx": 728,
+        "score": 0.014285714285714285,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L28_V006",
+        "frame_idx": 17574,
+        "score": 0.014084507042253521,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L29_V019",
+        "frame_idx": 22626,
+        "score": 0.013888888888888888,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V066",
+        "frame_idx": 3082,
+        "score": 0.0136986301369863,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L21_V013",
+        "frame_idx": 8205,
+        "score": 0.013513513513513514,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L29_V015",
+        "frame_idx": 11205,
+        "score": 0.013333333333333334,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L21_V023",
+        "frame_idx": 25995,
+        "score": 0.013157894736842105,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V066",
+        "frame_idx": 4949,
+        "score": 0.012987012987012988,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V066",
+        "frame_idx": 5099,
+        "score": 0.01282051282051282,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V066",
+        "frame_idx": 4649,
+        "score": 0.012658227848101266,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V066",
+        "frame_idx": 4799,
+        "score": 0.0125,
+        "branches": [
+          "visual"
+        ]
+      }
+    ]
+  },
+  "query-p1-4-kis": {
+    "task": "kis",
+    "query": "Một đàn sư tử đang nghỉ ngơi và leo trèo trên các bục gỗ trong khu nuôi dưỡng, phía trước có bảng thông tin của London Zoo phục vụ công tác theo dõi và bảo tồn động vật.. Sau đó có cảnh hai nhân viên mặc áo xanh lá đang cân và ghi nhận số liệu của một con vật trong khuôn viên sở thú.",
+    "hits": [
+      {
+        "video_id": "L22_V021",
+        "frame_idx": 20909,
+        "score": 0.01639344262295082,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L22_V021",
+        "frame_idx": 21096,
+        "score": 0.016129032258064516,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L22_V021",
+        "frame_idx": 10871,
+        "score": 0.015873015873015872,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L22_V021",
+        "frame_idx": 20366,
+        "score": 0.015625,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L22_V021",
+        "frame_idx": 20814,
+        "score": 0.015384615384615385,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L22_V021",
+        "frame_idx": 20750,
+        "score": 0.015151515151515152,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L22_V025",
+        "frame_idx": 23871,
+        "score": 0.014925373134328358,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L22_V021",
+        "frame_idx": 19485,
+        "score": 0.014705882352941176,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L22_V021",
+        "frame_idx": 19836,
+        "score": 0.014492753623188406,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L22_V021",
+        "frame_idx": 21039,
+        "score": 0.014285714285714285,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L21_V007",
+        "frame_idx": 8778,
+        "score": 0.014084507042253521,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L21_V029",
+        "frame_idx": 6246,
+        "score": 0.013888888888888888,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L21_V022",
+        "frame_idx": 19302,
+        "score": 0.0136986301369863,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L22_V004",
+        "frame_idx": 25047,
+        "score": 0.013513513513513514,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L29_V004",
+        "frame_idx": 1322,
+        "score": 0.013333333333333334,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L21_V018",
+        "frame_idx": 8043,
+        "score": 0.013157894736842105,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L29_V016",
+        "frame_idx": 16163,
+        "score": 0.012987012987012988,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L29_V016",
+        "frame_idx": 20790,
+        "score": 0.01282051282051282,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L28_V004",
+        "frame_idx": 25380,
+        "score": 0.012658227848101266,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L30_V089",
+        "frame_idx": 4013,
+        "score": 0.0125,
+        "branches": [
+          "visual"
+        ]
+      }
+    ]
+  },
+  "query-p1-5-kis": {
+    "task": "kis",
+    "query": "Đoạn clip bắt đầu bằng việc đậu hà lan được bỏ vào với mực đang được xào trên chảo, bên cạnh là đĩa hành tây và ớt đỏ thái lát chuẩn bị cho vào món ăn. Đoạn clip kết thúc với khung quay chậm (slow motion) cảnh lắc chảo trên bếp lửa.",
+    "hits": [
+      {
+        "video_id": "L26_V035",
+        "frame_idx": 5122,
+        "score": 0.01639344262295082,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V177",
+        "frame_idx": 4716,
+        "score": 0.016129032258064516,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V035",
+        "frame_idx": 5130,
+        "score": 0.015873015873015872,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V035",
+        "frame_idx": 6191,
+        "score": 0.015625,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V035",
+        "frame_idx": 5023,
+        "score": 0.015384615384615385,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V035",
+        "frame_idx": 5174,
+        "score": 0.015151515151515152,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V440",
+        "frame_idx": 3676,
+        "score": 0.014925373134328358,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V177",
+        "frame_idx": 4736,
+        "score": 0.014705882352941176,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V209",
+        "frame_idx": 3990,
+        "score": 0.014492753623188406,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V035",
+        "frame_idx": 5626,
+        "score": 0.014285714285714285,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V035",
+        "frame_idx": 6210,
+        "score": 0.014084507042253521,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V480",
+        "frame_idx": 5580,
+        "score": 0.013888888888888888,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V035",
+        "frame_idx": 5670,
+        "score": 0.0136986301369863,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V216",
+        "frame_idx": 5504,
+        "score": 0.013513513513513514,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V037",
+        "frame_idx": 2736,
+        "score": 0.013333333333333334,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V177",
+        "frame_idx": 4992,
+        "score": 0.013157894736842105,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V054",
+        "frame_idx": 4590,
+        "score": 0.012987012987012988,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V343",
+        "frame_idx": 4355,
+        "score": 0.01282051282051282,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V035",
+        "frame_idx": 486,
+        "score": 0.012658227848101266,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V391",
+        "frame_idx": 4992,
+        "score": 0.0125,
+        "branches": [
+          "visual"
+        ]
+      }
+    ]
+  },
+  "query-p1-6-kis": {
+    "task": "kis",
+    "query": "Mẩu tin bắt đầu với hình ảnh nột người đàn ông mặc vest xanh đậm, sơ mi trắng và cà vạt, đang ngồi trên một chiếc ghế lớn. Ông cầm bằng hai tay một khối đá quý thô khá lớn, đưa lên gần mặt để quan sát.\nBên phải là một phụ nữ mặc trang phục công sở màu đen và khăn trùm đầu màu hồng tím, đang đứng cạnh và mỉm cười. Tiếp theo có hình ảnh toàn cảnh từ trên cao của một mỏ đá quý lộ thiên quy mô lớn với hố khai thác sâu nhiều tầng và hệ thống đường vận chuyển bao quanh.",
+    "hits": [
+      {
+        "video_id": "L25_V034",
+        "frame_idx": 1164,
+        "score": 0.024700299700299702,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V021",
+        "frame_idx": 29345,
+        "score": 0.02459016393442623,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L25_V061",
+        "frame_idx": 31889,
+        "score": 0.024377437743774377,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V052",
+        "frame_idx": 1471,
+        "score": 0.024193548387096774,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L25_V086",
+        "frame_idx": 13950,
+        "score": 0.023809523809523808,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L25_V040",
+        "frame_idx": 25429,
+        "score": 0.0234375,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L25_V039",
+        "frame_idx": 36742,
+        "score": 0.022388059701492536,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L25_V049",
+        "frame_idx": 812,
+        "score": 0.022058823529411766,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L25_V005",
+        "frame_idx": 47369,
+        "score": 0.021739130434782608,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L25_V008",
+        "frame_idx": 28226,
+        "score": 0.02142857142857143,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L25_V079",
+        "frame_idx": 5155,
+        "score": 0.021152760283195064,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V014",
+        "frame_idx": 1385,
+        "score": 0.02112676056338028,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L25_V047",
+        "frame_idx": 4204,
+        "score": 0.020833333333333332,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L25_V070",
+        "frame_idx": 1351,
+        "score": 0.02054794520547945,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L25_V031",
+        "frame_idx": 856,
+        "score": 0.02027027027027027,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L25_V030",
+        "frame_idx": 1211,
+        "score": 0.02,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L25_V004",
+        "frame_idx": 25056,
+        "score": 0.019736842105263157,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L25_V042",
+        "frame_idx": 46910,
+        "score": 0.019625084187682405,
+        "branches": [
+          "object",
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L25_V025",
+        "frame_idx": 39727,
+        "score": 0.019230769230769232,
+        "branches": [
+          "object"
+        ]
+      },
+      {
+        "video_id": "L25_V058",
+        "frame_idx": 33165,
+        "score": 0.0189873417721519,
+        "branches": [
+          "object"
+        ]
+      }
+    ]
+  },
+  "query-p1-7-kis": {
+    "task": "kis",
+    "query": "Đoạn clip bắt đầu bằng cảnh cà rốt cắt hình ngôi sao đang được luộc trong nồi nước sôi, đặt trong rổ lưới kim loại và được đảo bằng đôi đũa gỗ. \nĐoạn clip kết thúc bằng hình ảnh đĩa rau củ luộc và đồ chiên được trình bày đẹp mắt, gồm đậu bắp, súp lơ, cà rốt hình ngôi sao, bí xanh, chén nước chấm màu hồng ở giữa và đôi đũa màu hồng nhạt đặt bên phải",
+    "hits": [
+      {
+        "video_id": "L26_V041",
+        "frame_idx": 405,
+        "score": 0.01639344262295082,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V041",
+        "frame_idx": 300,
+        "score": 0.016129032258064516,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V041",
+        "frame_idx": 6787,
+        "score": 0.015873015873015872,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V103",
+        "frame_idx": 2310,
+        "score": 0.015625,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V041",
+        "frame_idx": 3645,
+        "score": 0.015384615384615385,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V171",
+        "frame_idx": 3645,
+        "score": 0.015151515151515152,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V041",
+        "frame_idx": 7369,
+        "score": 0.014925373134328358,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V092",
+        "frame_idx": 2560,
+        "score": 0.014705882352941176,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V041",
+        "frame_idx": 7425,
+        "score": 0.014492753623188406,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V041",
+        "frame_idx": 7290,
+        "score": 0.014285714285714285,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V041",
+        "frame_idx": 4590,
+        "score": 0.014084507042253521,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V041",
+        "frame_idx": 3763,
+        "score": 0.013888888888888888,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V420",
+        "frame_idx": 1607,
+        "score": 0.0136986301369863,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V341",
+        "frame_idx": 3072,
+        "score": 0.013513513513513514,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V341",
+        "frame_idx": 3042,
+        "score": 0.013333333333333334,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V041",
+        "frame_idx": 7144,
+        "score": 0.013157894736842105,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V103",
+        "frame_idx": 2304,
+        "score": 0.012987012987012988,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V345",
+        "frame_idx": 5866,
+        "score": 0.01282051282051282,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V041",
+        "frame_idx": 2928,
+        "score": 0.012658227848101266,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V041",
+        "frame_idx": 7155,
+        "score": 0.0125,
+        "branches": [
+          "visual"
+        ]
+      }
+    ]
+  },
+  "query-p1-8-kis": {
+    "task": "kis",
+    "query": "Người đầu bếp lần lượt đặt các miếng nguyên liệu dạng thanh và những lát cắt hình hoa vào một đĩa đang được hấp trong nồi.\nCác nguyên liệu được dùng đũa sắp xếp xen kẽ xung quanh phần thức ăn đã có sẵn trên đĩa.\nSau đó, đầu bếp dùng muỗng lấy thêm một loại nguyên liệu mềm từ tô thủy tinh.\nPhần nguyên liệu này được đặt vào giữa đĩa, xung quanh là các miếng dạng thanh và hình hoa đã được sắp xếp trước đó.",
+    "hits": [
+      {
+        "video_id": "L26_V325",
+        "frame_idx": 6408,
+        "score": 0.01639344262295082,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V171",
+        "frame_idx": 5211,
+        "score": 0.016129032258064516,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V398",
+        "frame_idx": 5757,
+        "score": 0.015873015873015872,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V298",
+        "frame_idx": 5864,
+        "score": 0.015625,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V080",
+        "frame_idx": 3472,
+        "score": 0.015384615384615385,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V173",
+        "frame_idx": 3952,
+        "score": 0.015151515151515152,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V381",
+        "frame_idx": 5865,
+        "score": 0.014925373134328358,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V225",
+        "frame_idx": 3635,
+        "score": 0.014705882352941176,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V268",
+        "frame_idx": 5268,
+        "score": 0.014492753623188406,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V330",
+        "frame_idx": 2567,
+        "score": 0.014285714285714285,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V324",
+        "frame_idx": 5019,
+        "score": 0.014084507042253521,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V460",
+        "frame_idx": 5523,
+        "score": 0.013888888888888888,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V140",
+        "frame_idx": 4833,
+        "score": 0.0136986301369863,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V494",
+        "frame_idx": 6152,
+        "score": 0.013513513513513514,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V276",
+        "frame_idx": 6640,
+        "score": 0.013333333333333334,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V459",
+        "frame_idx": 6344,
+        "score": 0.013157894736842105,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V049",
+        "frame_idx": 6104,
+        "score": 0.012987012987012988,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V276",
+        "frame_idx": 6656,
+        "score": 0.01282051282051282,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V078",
+        "frame_idx": 4843,
+        "score": 0.012658227848101266,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L26_V132",
+        "frame_idx": 3200,
+        "score": 0.0125,
+        "branches": [
+          "visual"
+        ]
+      }
+    ]
+  },
+  "query-p1-9-qa": {
+    "task": "qa",
+    "query": "Đoạn phim ghi lại cảnh những chiếc xe ô tô lội nước, chiếc xe màu vàng, màu đỏ và màu đen lần lượt chuẩn bị đi qua cầu. Con số được ghi trên biển báo bên trái của cây cầu là bao nhiêu?",
+    "hits": [
+      {
+        "video_id": "L28_V020",
+        "frame_idx": 14444,
+        "score": 0.01639344262295082,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L28_V020",
+        "frame_idx": 14321,
+        "score": 0.016129032258064516,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L28_V023",
+        "frame_idx": 6615,
+        "score": 0.015873015873015872,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L28_V020",
+        "frame_idx": 8775,
+        "score": 0.015625,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L28_V020",
+        "frame_idx": 8441,
+        "score": 0.015384615384615385,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L21_V003",
+        "frame_idx": 26220,
+        "score": 0.015151515151515152,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L28_V020",
+        "frame_idx": 8505,
+        "score": 0.014925373134328358,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L21_V017",
+        "frame_idx": 4020,
+        "score": 0.014705882352941176,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L21_V028",
+        "frame_idx": 8760,
+        "score": 0.014492753623188406,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L22_V016",
+        "frame_idx": 16037,
+        "score": 0.014285714285714285,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L21_V017",
+        "frame_idx": 8139,
+        "score": 0.014084507042253521,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L29_V008",
+        "frame_idx": 26127,
+        "score": 0.013888888888888888,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L21_V015",
+        "frame_idx": 8486,
+        "score": 0.0136986301369863,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L21_V001",
+        "frame_idx": 4998,
+        "score": 0.013513513513513514,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L28_V020",
+        "frame_idx": 8640,
+        "score": 0.013333333333333334,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L21_V009",
+        "frame_idx": 6126,
+        "score": 0.013157894736842105,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L22_V005",
+        "frame_idx": 13553,
+        "score": 0.012987012987012988,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L28_V012",
+        "frame_idx": 16065,
+        "score": 0.01282051282051282,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L21_V001",
+        "frame_idx": 4551,
+        "score": 0.012658227848101266,
+        "branches": [
+          "visual"
+        ]
+      },
+      {
+        "video_id": "L28_V024",
+        "frame_idx": 1755,
+        "score": 0.0125,
+        "branches": [
+          "visual"
+        ]
+      }
+    ]
+  }
+}
