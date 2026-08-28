@@ -79,6 +79,7 @@ def _config(corpus) -> Config:
                     "ocr": str(root / "derived/ocr.parquet"),
                     "index": str(root / "derived/index"),
                     "text_db": str(root / "derived/text.sqlite"),
+                    "objects_db": str(root / "derived/objects.sqlite"),
                 },
                 "submissions": str(root / "submissions"),
             },

@@ -20,6 +20,7 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO_ROOT / "src"))
 
 from aic.config import load_config
+from aic.query.expand import AT_LEAST_LABELS
 from aic.query.search import SearchEngine
 from aic.submit.policy import (
     Candidate,
@@ -191,6 +192,16 @@ def render_results(settings: dict, config) -> None:
         st.write(f"**Visual (EN):** {expanded.visual_en}")
         st.write(f"**OCR:** {expanded.ocr_terms}")
         st.write(f"**ASR:** {expanded.asr_terms}")
+        st.write(f"**Objects:** {expanded.objects}")
+        if expanded.min_object_counts:
+            # "≥" (at least) only for labels where more is a better match (Person);
+            # every other label means "exactly N" (search_by_target_count), where
+            # "≥" would misleadingly suggest more instances keep improving the match.
+            counts = ", ".join(
+                f"{'≥' if label.strip().lower() in AT_LEAST_LABELS else '='}{n} {label}"
+                for label, n in expanded.min_object_counts.items()
+            )
+            st.write(f"**Số lượng tối thiểu:** {counts}")
 
     st.caption(f"{len(result.hits)} kết quả · nhánh đang hoạt động: {', '.join(result.active_branches)}")
 

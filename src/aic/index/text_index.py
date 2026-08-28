@@ -46,15 +46,26 @@ def strip_diacritics(text: str) -> str:
     return "".join(ch for ch in decomposed if not unicodedata.combining(ch))
 
 
-def escape_fts_query(text: str) -> str:
-    """Quote terms so punctuation cannot be read as FTS5 operators.
+def escape_fts_query(terms: Sequence[str]) -> str:
+    """Build an FTS5 query matching ANY of ``terms``, each as an exact phrase.
 
-    User queries contain characters FTS5 treats as syntax (``"``, ``*``, ``-``,
-    ``(``). Quoting each token turns the whole thing into a literal phrase search
-    instead of a syntax error mid-contest.
+    Each term is quoted as a single FTS5 phrase - its words must appear
+    adjacent, in order - rather than split into individual words each OR'd
+    separately. Splitting on words was the previous behavior, and it silently
+    degrades a specific multi-word phrase into a bag of words: "chạm mũi chân"
+    (touching toes) would match any segment containing just "chân" (foot) on
+    its own, such as an unrelated "chân gà" (chicken feet) recipe line. The
+    different *terms* in the list are still OR'd against each other - expand_query
+    hands over several independent candidate phrases, and any one of them
+    matching is still a hit - only the words *within* one term are now required
+    to appear together.
     """
-    tokens = [t for t in text.replace('"', " ").split() if t]
-    return " OR ".join(f'"{token}"' for token in tokens)
+    quoted = []
+    for term in terms:
+        cleaned = term.replace('"', " ").strip()
+        if cleaned:
+            quoted.append(f'"{cleaned}"')
+    return " OR ".join(quoted)
 
 
 @dataclass
@@ -83,7 +94,11 @@ class TextIndex:
     def __init__(self, path: Path) -> None:
         self.path = Path(path)
         self.path.parent.mkdir(parents=True, exist_ok=True)
-        self.conn = sqlite3.connect(self.path)
+        # check_same_thread=False: Streamlit reruns a cached SearchEngine (and the
+        # TextIndex it lazily opens) from a different thread on each interaction,
+        # which the sqlite3 default would reject even though usage here is never
+        # concurrent - each call runs to completion before the next one starts.
+        self.conn = sqlite3.connect(self.path, check_same_thread=False)
         self.conn.row_factory = sqlite3.Row
         self.conn.executescript(SCHEMA)
 
@@ -148,10 +163,10 @@ class TextIndex:
 
     def search(self, terms: Sequence[str], kind: str | None = None, limit: int = 500) -> list[TextHit]:
         """BM25 search over both the accented and folded columns."""
-        query = escape_fts_query(" ".join(terms))
+        query = escape_fts_query(terms)
         if not query:
             return []
-        folded = escape_fts_query(strip_diacritics(" ".join(terms)))
+        folded = escape_fts_query([strip_diacritics(term) for term in terms])
 
         # The join is 1:1 (segments_fts.rowid == segments.id), so no GROUP BY is
         # needed - and bm25() is rejected outright in an aggregate context.

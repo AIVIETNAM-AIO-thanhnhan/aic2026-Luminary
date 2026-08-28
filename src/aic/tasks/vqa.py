@@ -92,8 +92,9 @@ def answer_question(
     )
     try:
         from google import genai
+        from google.genai import types
 
-        client = genai.Client(api_key=key)
+        client = genai.Client(api_key=key, http_options=types.HttpOptions(timeout=20_000))
         response = client.models.generate_content(
             model=model,
             contents=[_PROMPT.format(question=question, transcript_block=transcript_block), *frames],

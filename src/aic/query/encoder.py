@@ -59,6 +59,7 @@ class TransformersTextEncoder(TextEncoder):
         )
         with torch.no_grad():
             features = self._model.get_text_features(**batch)
+            features = _project(features, self._model, "text_projection")
         vectors = features.cpu().numpy().astype(np.float32)
         if vectors.shape[1] != self.dim:
             raise ValueError(
@@ -72,8 +73,12 @@ class TransformersTextEncoder(TextEncoder):
         """Encode PIL images with the matching image tower.
 
         Only used by TRAKE alignment, which scores a few hundred densely extracted
-        frames per query on CPU. The processor is loaded lazily so text-only
-        searches never pay for it.
+        frames per query on CPU. Toggling this model to Apple's MPS backend and
+        back was tried to speed this up, but reproducibly hung inside
+        MPSStream::synchronize (observed via a live `sample` stack trace: stuck
+        indefinitely at the exact same native frame) - staying on CPU is slower
+        but does not have that failure mode. Chunking still bounds peak memory.
+        The processor is loaded lazily so text-only searches never pay for it.
         """
         if not images:
             return np.zeros((0, self.dim), dtype=np.float32)
@@ -82,10 +87,38 @@ class TransformersTextEncoder(TextEncoder):
             from transformers import AutoImageProcessor
 
             self._processor = AutoImageProcessor.from_pretrained(self.model_id)
-        batch = self._processor(images=images, return_tensors="pt")
+        chunks: list[np.ndarray] = []
         with torch.no_grad():
-            features = self._model.get_image_features(**batch)
-        return _unit(features.cpu().numpy().astype(np.float32))
+            for start in range(0, len(images), 32):
+                batch = self._processor(images=images[start : start + 32], return_tensors="pt")
+                features = self._model.get_image_features(**batch)
+                features = _project(features, self._model, "visual_projection")
+                chunks.append(features.cpu().numpy().astype(np.float32))
+        return _unit(np.concatenate(chunks, axis=0))
+
+
+def _project(features, model, projection_attr: str):
+    """Recover a plain embedding tensor across transformers API versions and architectures.
+
+    Some ``transformers`` releases changed ``get_text_features`` to return the
+    raw pre-projection pooled output instead of the final CLIP embedding, while
+    ``get_image_features`` on the same release already returns the projected
+    embedding in ``pooler_output`` - the two are not symmetric. Comparing the
+    pooled width against the projection layer's expected input width (rather
+    than just checking whether ``pooler_output`` exists) tells which case this
+    is: only project when the width still matches the *un*-projected side.
+
+    SigLIP has no separate projection head at all (its pooling attention head
+    already outputs the joint embedding directly), so ``projection_attr`` may
+    not exist on the model - that is not an error, just nothing left to do.
+    """
+    if not hasattr(features, "pooler_output"):
+        return features
+    pooled = features.pooler_output
+    projection = getattr(model, projection_attr, None)
+    if projection is not None and pooled.shape[-1] == projection.in_features:
+        return projection(pooled)
+    return pooled
 
 
 def _unit(vectors: np.ndarray) -> np.ndarray:

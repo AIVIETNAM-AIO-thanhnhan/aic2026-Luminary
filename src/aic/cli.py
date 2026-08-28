@@ -111,6 +111,20 @@ def _cmd_build_text(args: argparse.Namespace) -> int:
     return 0
 
 
+def _cmd_build_objects(args: argparse.Namespace) -> int:
+    from aic.data.catalog import load_catalog
+    from aic.index.object_index import build_object_index
+
+    config = load_config(args.config)
+    catalog = load_catalog(config.catalog_path)
+    written = build_object_index(
+        catalog, config.raw_path("objects"), config.derived_path("objects_db"),
+        score_threshold=args.score_threshold,
+    )
+    print(f"wrote {config.derived_path('objects_db')} ({written:,} detections, threshold {args.score_threshold})")
+    return 0
+
+
 def _cmd_search(args: argparse.Namespace) -> int:
     from aic.query.search import SearchEngine
 
@@ -234,6 +248,10 @@ def build_parser() -> argparse.ArgumentParser:
 
     text = sub.add_parser("build-text", help="load OCR/ASR parquet into the FTS5 database")
     text.set_defaults(func=_cmd_build_text)
+
+    objects = sub.add_parser("build-objects", help="index the organizers' per-frame object detections")
+    objects.add_argument("--score-threshold", type=float, default=0.4)
+    objects.set_defaults(func=_cmd_build_objects)
 
     search = sub.add_parser("search", help="run one query and print the ranking")
     search.add_argument("query")

@@ -136,7 +136,7 @@ def extract_frame_range(
     result = subprocess.run(
         [
             ffmpeg, "-v", "error", "-i", str(video_path),
-            "-vf", f"select='{select}'", "-vsync", "0",
+            "-vf", f"select='{select}'", "-fps_mode", "passthrough",
             "-f", "image2pipe", "-vcodec", "png", "pipe:1",
         ],
         capture_output=True, check=False,
