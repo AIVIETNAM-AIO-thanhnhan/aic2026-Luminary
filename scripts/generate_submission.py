@@ -34,8 +34,8 @@ from aic.data.verify import _find_video, probe_video  # noqa: E402
 from aic.query.encoder import get_encoder  # noqa: E402
 from query_translations import TRAKE_EVENTS, VISUAL_EN  # noqa: E402
 
-QUESTIONS_DIR = Path("/Users/dangphuong/AI/AIO2026/HCM/Exam1/SOTUYEN1-bo-de-thi")
-SUBMISSION_DIR = Path("/Users/dangphuong/AI/AIO2026/HCM/Exam1/submission")
+QUESTIONS_DIR = Path("/Users/dangphuong/AI/AIO2026/HCM/aic2026-Luminary/Exam1/SOTUYEN1-bo-de-thi")
+SUBMISSION_DIR = Path("/Users/dangphuong/AI/AIO2026/HCM/aic2026-Luminary/Exam1/submission")
 
 # TRAKE stage-2 alignment (dense CPU re-decode + SigLIP re-encode per candidate) can
 # take many minutes per query. Set to skip it and keep whatever CSV already exists

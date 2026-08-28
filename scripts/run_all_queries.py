@@ -32,7 +32,7 @@ def _expand(text: str, query_id: str, config) -> ExpandedQuery:
         asr_terms=expanded.asr_terms, objects=expanded.objects, used_llm=False,
     )
 
-QUESTIONS_DIR = Path("/Users/dangphuong/AI/AIO2026/HCM/Exam1/SOTUYEN1-bo-de-thi")
+QUESTIONS_DIR = Path("/Users/dangphuong/AI/AIO2026/HCM/aic2026-Luminary/Exam1/SOTUYEN1-bo-de-thi")
 OUT_PATH = Path(__file__).resolve().parents[1] / "data" / "derived" / "query_results.json"
 
 
